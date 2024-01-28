@@ -1,0 +1,83 @@
+.conteiner_qrcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    
+}
+.head_qrcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.head_qrcode svg{
+    margin-right: 14px;
+    
+    
+}
+.area-qrcode{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.area-qrcode div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 5px;
+    margin:10px 0;
+    border-radius: 4px;
+
+
+}
+.area-qrcode input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    padding: 5px;
+}
+.area-qrcode button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.qrcode{
+    width: inherit;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.qrcode img{
+    margin-top: 40px;
+    width: 300px;
+}
+@media(max-width:720px){
+    .conteiner_qrcode{
+        width: 90%;
+    }
+    .head_qrcode h1{
+        font-size: 1.5rem;
+    }
+    .area-qrcode{
+        margin-bottom: 10px;
+    }
+    .qrcode h3{
+        font-size: 1rem;
+    }
+    .qrcode img{
+        margin-top: 30px;
+        width: 200px;
+    }
+}
