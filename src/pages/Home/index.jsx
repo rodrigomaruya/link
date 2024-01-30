@@ -32,8 +32,8 @@ export default function Home() {
     return(
         <div className="container-home">
             <div className="logo">
-                <img src="/vite.svg" alt="Logo" />
-                <h1>SujeitoLink</h1>
+                <img src="/link.PNG" alt="Logo" />
+                <h1>Encurtador de Link</h1>
                 <span>Cole seu link para encurtar 👇</span>
             </div>
 

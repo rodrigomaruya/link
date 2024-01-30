@@ -2,7 +2,7 @@ import './qrcode.css'
 import {FiArrowLeft,FiLink} from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import api from '../../services/api'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 
 
@@ -10,14 +10,12 @@ import { useState } from 'react'
 export default function Qrcode(){
     const [qrcode,setQrcode]=useState()
     const [link,setLink]=useState('')
-    const [pegarQr,setPegarQr]=useState('vite.svg')
+    const [pegarQr,setPegarQr]=useState('/link.PNG')
     const [loading,setLoading]=useState(false)
     
     
     async function handleQrcode(){
-        setQrcode('')
-        setPegarQr('vite.svg')
-
+        
         try{
             const response=await api.post('/bitlinks',{
                 long_url:link,
@@ -47,7 +45,10 @@ export default function Qrcode(){
         }
     }
     if(loading){
+        
         createQr()
+        setLoading(false)
+        
     }
     return(
         <div className='conteiner_qrcode'>
