@@ -2,7 +2,7 @@ import './qrcode.css'
 import {FiArrowLeft,FiLink} from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import api from '../../services/api'
-import { useState,useEffect } from 'react'
+import { useState } from 'react'
 
 
 
